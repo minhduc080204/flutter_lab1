@@ -45,7 +45,7 @@ class _DicerScreenState extends State<DicerScreen> {
                   TextButton(
                     onPressed: increment,
                       child: Image.asset(
-                        './images/ball$number.png',
+                        'assets/images/ball$number.png',
                         width: 300,
                         height: 300,
                         fit: BoxFit.cover,
