@@ -14,30 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: DicerScreen());
-  }
-}
-
-class DicerScreen extends StatefulWidget {
-  @override
-  _DicerScreenState createState() => _DicerScreenState();
-}
-
-class _DicerScreenState extends State<DicerScreen> {
-  int number = 1;
-  Random random = Random();
-
-  void increment() {
-    setState(() {
-      number=random.nextInt(5)+1;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
         home: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
